@@ -1,0 +1,44 @@
+$primary-color: #5aabc1;
+$text-color: #ffffff;
+
+.custom-navbar {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .navbar-title {
+    > a {
+      color: $text-color !important;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    > h5 {
+      color: $text-color;
+      margin: 0;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $text-color;
+      margin-left: 15px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

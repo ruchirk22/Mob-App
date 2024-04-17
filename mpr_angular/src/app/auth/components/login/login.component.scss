@@ -1,0 +1,54 @@
+$primary-color: #5aabc1;
+$text-color: #ffffff;
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .child {
+    padding: 20px;
+    width: 300px;
+    background-color: $primary-color;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .imgDiv {
+      margin-bottom: 20px;
+    }
+
+    .login-form-margin {
+      margin-bottom: 20px;
+    }
+
+    .login-form-forgot {
+      align-self: flex-end;
+      color: $text-color;
+    }
+
+    .login-form-button {
+      background-color: $primary-color;
+      color: $text-color;
+      border: none;
+      padding: 10px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: lighten($text-color, 10%);
+      }
+    }
+  }
+}
