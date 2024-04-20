@@ -5,11 +5,16 @@ import { Link } from "react-router-dom";
 const PlanDetails = () => {
     const { planId } = useParams();
   return (
-    <div>
-      <h2 className="text-lg font-bold mb-4">Plan Details</h2>
-      <p className='p-10'>Plan ID: {planId}</p>
-      <Link to="/payment" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Buy Plan</Link>
-    </div>
+    <div className="p-6 bg-gray-100 rounded-lg shadow-md animate-fadeIn">
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Plan Details</h2>
+            <p className="text-lg text-gray-600 mb-8">Plan ID: {planId}</p>
+            <Link
+                to="/payment"
+                className="inline-block bg-blue-300 hover:bg-blue-400 text-white font-semibold py-3 px-6 rounded-md transition duration-300 ease-in-out shadow-md hover:shadow-lg"
+            >
+                Buy Plan
+            </Link>
+     </div>
   )
 }
 

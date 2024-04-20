@@ -9,11 +9,11 @@
 		<version>3.2.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mob_recharge</groupId>
-	<artifactId>mob_recharge-backend</artifactId>
+	<groupId>com.mobicom</groupId>
+	<artifactId>mobicom-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mob_recharge</name>
-	<description>mob_recharge-backend APIs</description>
+	<name>mobicom</name>
+	<description>Mobicom APIs</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
